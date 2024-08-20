@@ -18,6 +18,10 @@ public class ApiExceptionController {
             throw new RuntimeException("미등록 사용자");
         }
 
+        if (id.equals("bad")) {
+            throw new IllegalArgumentException("잘못된 입력 값");
+        }
+
         return new MemberDto(id, "hello" + id);
     }
 

@@ -3,13 +3,11 @@ package hello.exception.filter;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.UUID;
 
 @Slf4j
-@Component
 public class LogFilter implements Filter {
 
     @Override
